@@ -32,7 +32,6 @@ h1 {
   background-image: linear-gradient(to right, #1f4b63, #48b0e8);
   min-height: 93%;
   margin: auto;
-  min-width: 79%;
   padding: 20px;
   box-shadow: 2px 2px 2px rgb(2, 1, 1);
 }
