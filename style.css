@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 3px;
+  padding: 0px;
 }
 
 body {
@@ -24,7 +24,8 @@ body {
 
 h1 {
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
+  width: 80%;
 }
 
 .conteudo {
@@ -54,16 +55,13 @@ h1 {
 img {
   border-radius: 50%;
   background-color: white;
-  padding: 0px;
   margin: 10px auto;
   width: 100px;
   height: 100px;
   display: block;
 }
 
-p {
-  margin: 15px;
-}
+
 
 #my-form input[type="email"] {
   width: 80%;
