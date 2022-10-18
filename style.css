@@ -1,37 +1,34 @@
 * {
   margin: 3px;
-  padding: 0px;
 }
 
 body {
-  font-size: 18px;
-  font-family: sans-serif;
-  box-sizing: border-box;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 40px;
-  background-color: black;
-  color: aliceblue;
+  background-image: linear-gradient(to right, #8eb4c3, #696f80);
+  color: #2b2e41;
 }
 
 .container {
-  background-color: azure;
-  border-radius: 20px;
+  background-color: #c7fafb;
+  border-radius: 25px;
   padding: 10px;
   margin: auto;
-  width: 50%;
-  height: 570px;
+  width: 30%;
+  height: 55vh;
   text-align: center;
 }
 
 h1 {
-  padding: 20px;
+  padding: 10px;
   margin: 20px auto;
-  width: 80%;
 }
 
 .conteudo {
   border-radius: 20px;
   background-image: linear-gradient(to right, #1f4b63, #48b0e8);
-  min-height: 93%;
+  height: 93%;
   margin: auto;
   padding: 20px;
   box-shadow: 2px 2px 2px rgb(2, 1, 1);
@@ -42,14 +39,14 @@ h1 {
   margin: auto;
   min-width: 10%;
   padding: 10px 15px;
-  background: #262626;
+  background: #2b2e41;
   color: #fff;
   border-radius: 50px;
 }
 
 .bnt:hover {
-  background-color: #fff;
-  color: #262626;
+  background-color: #c7fafb;
+  color: #2b2e41;
 }
 
 img {
@@ -62,15 +59,81 @@ img {
 }
 
 #my-form input[type="email"] {
-  width: 80%;
+  width: 60%;
   height: 40px;
   border-radius: 5px;
   border: 1px solid #1f4b63;
 }
 
 #my-form input[type="text"] {
-  width: 80%;
+  width: 60%;
   height: 40px;
   border-radius: 5px;
   border: 1px solid #1f4b63;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .conteudo {
+    border-radius: 20px;
+    width: 400px;
+  }
+
+  .container {
+    border-radius: 20px;
+    width: 440px;
+  }
+
+  #my-form input[type="email"] {
+    width: 90%;
+  }
+
+  #my-form input[type="text"] {
+    width: 90%;
+  }
+
+  .bnt {
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .conteudo {
+    border-radius: 20px;
+    width: 160px;
+  }
+
+  .container {
+    border-radius: 20px;
+    width: 200px;
+  }
+
+  #my-form input[type="email"] {
+    width: 90%;
+  }
+
+  #my-form input[type="text"] {
+    width: 90%;
+  }
+
+  .bnt {
+    padding: 5px 10px;
+  }
 }
