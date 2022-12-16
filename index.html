@@ -17,18 +17,19 @@
         </div>
         <div class="conteudo">
 
-            <form id="my-form">
+            <form action="login.php" method="post" autocomplete="on" id="my-form">
                 <h1>Login</h1>
                 <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta</p>
 
                 <div class="campo">
                     <span class="material-icons">person</span>
-                    <input placeholder="Seu email" id="email-1" type="email">
+                    <input placeholder="Seu email" id="email-1" type="email" maxlength="30" autocomplete="email">
                 </div>
 
                 <div class="campo">
                     <span class="material-icons">vpn_key</span>
-                    <input placeholder="Sua senha" id="senha" type="text">
+                    <input placeholder="Sua senha" id="senha" type="text" minlength="8" max="30"
+                        autocomplete="current-password">
                 </div>
 
                 <input class="bnt" type="submit">
