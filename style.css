@@ -1,139 +1,183 @@
 * {
-  margin: 3px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 40px;
-  background-image: linear-gradient(to right, #8eb4c3, #696f80);
-  color: #2b2e41;
+  background-color: #ffb46c;
+  width: 100vw;
+  height: 100vh;
 }
 
-.container {
-  background-color: #c7fafb;
-  border-radius: 25px;
-  padding: 10px;
-  margin: auto;
-  width: 30%;
-  height: 55vh;
-  text-align: center;
-}
-
-h1 {
-  padding: 10px;
-  margin: 20px auto;
-}
-
-.conteudo {
-  border-radius: 20px;
-  background-image: linear-gradient(to right, #1f4b63, #48b0e8);
-  height: 93%;
-  margin: auto;
-  padding: 20px;
-  box-shadow: 2px 2px 2px rgb(2, 1, 1);
-}
-
-.bnt {
+div#img {
   display: block;
-  margin: auto;
-  min-width: 10%;
-  padding: 10px 15px;
-  background: #2b2e41;
-  color: #fff;
-  border-radius: 50px;
-}
+  background: url(img/camera.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.bnt:hover {
-  background-color: #c7fafb;
-  color: #2b2e41;
-}
-
-img {
   border-radius: 50%;
-  background-color: white;
   margin: 10px auto;
   width: 100px;
   height: 100px;
   display: block;
 }
 
-#my-form input[type="email"] {
-  width: 60%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #1f4b63;
+.container {
+  background-color: #c7fafb;
+  position: absolute;
+  width: 250px;
+  height: 515px;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+
+  transition: width 0.3s, heigth 0.3s;
+  transition-timing-function: ease;
+  transform: translate(-50%, -50%);
 }
 
-#my-form input[type="text"] {
-  width: 60%;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid #1f4b63;
+#my-form {
+  padding: 10px;
+  display: block;
 }
 
-@media (max-width: 800px) {
-  h1 {
-    font-size: 25px;
-  }
+div > form > h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 1.6em;
+}
 
-  img {
-    width: 150px;
-    height: 150px;
-  }
+div > form > p {
+  font-size: 0.9em;
+  padding: 5px;
+}
 
-  .conteudo {
-    border-radius: 20px;
-    width: 400px;
+div.campo > span {
+  color: white;
+  font-size: 1.8em;
+}
+
+form > div.campo {
+  background-color: #2796b3;
+  border: 2px solid #2796b3;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 5px 0px;
+}
+
+div.campo input {
+  background-color: #2796b3;
+  font-size: 1em;
+  width: calc(100% - 45px);
+  height: 100%;
+  width: 85%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-5px);
+}
+
+div.campo input::placeholder {
+  color: black;
+}
+
+div.campo input:focus-within {
+  background-color: white;
+}
+
+form > .bnt {
+  display: block;
+  text-align: center;
+  border: 0px;
+  width: 90%;
+  height: 35px;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #5ccacc;
+  border-radius: 115px;
+}
+
+.bnt:hover {
+  background-color: #339496;
+  color: #2b2e41;
+}
+
+form > a {
+  color: #5ccacc;
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 5px;
+  color: black;
+  border-radius: 5px;
+}
+
+form > a:hover {
+  color: #339496;
+}
+
+form > a > span {
+  color: #0f1c72;
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background-image: linear-gradient(to top, #ffc085, #2796b3);
   }
 
   .container {
-    border-radius: 20px;
-    width: 440px;
+    width: 80vw;
+    height: 530px;
   }
 
-  #my-form input[type="email"] {
-    width: 90%;
+  div > form > h1 {
+    font-size: 2em;
   }
 
-  #my-form input[type="text"] {
-    width: 90%;
+  div > form > p {
+    font-size: 1em;
   }
 
-  .bnt {
-    padding: 10px 15px;
+  div > #img {
+    width: 170px;
+    height: 170px;
+  }
+  form > a > span {
+    color: #0f1c72;
+    font-size: 0.8em;
   }
 }
 
-@media (max-width: 350px) {
-  h1 {
-    font-size: 20px;
-  }
-
-  img {
-    width: 70px;
-    height: 70px;
-  }
-
-  .conteudo {
-    border-radius: 20px;
-    width: 160px;
+@media screen and (min-width: 769px) {
+  body {
+    background-image: linear-gradient(to top, #ffc085, #2796b3);
   }
 
   .container {
-    border-radius: 20px;
-    width: 200px;
+    width: 769px;
+    height: 570px;
   }
 
-  #my-form input[type="email"] {
-    width: 90%;
+  div > form > h1 {
+    font-size: 2em;
   }
 
-  #my-form input[type="text"] {
-    width: 90%;
+  div > form > p {
+    font-size: 1.2em;
   }
 
-  .bnt {
-    padding: 5px 10px;
+  div > #img {
+    width: 180px;
+    height: 180px;
+  }
+  form > a {
+    font-size: 1em;
   }
 }

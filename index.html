@@ -6,29 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
+        <div id="img">
+
+        </div>
         <div class="conteudo">
 
-            <img src="img/camera.jfif" alt="">
-
             <form id="my-form">
-                <h1>Login in to your account</h1>
+                <h1>Login</h1>
+                <p>Seja bem vindo(a) novamente. Faça login para acessar sua conta</p>
 
-                <p class="msg"></p>
-                <p class="msg-c"></p>
-
-                <div class="name">
-                    <input placeholder="Your name" id="name-1" type="text">
+                <div class="campo">
+                    <span class="material-icons">person</span>
+                    <input placeholder="Seu email" id="email-1" type="email">
                 </div>
 
-                <div class="email">
-                    <input placeholder="Your email" id="email-1" type="email">
+                <div class="campo">
+                    <span class="material-icons">vpn_key</span>
+                    <input placeholder="Sua senha" id="senha" type="text">
                 </div>
+
                 <input class="bnt" type="submit">
+
+                <a href="#" class="botao">Esqueci a senha <span class="material-icons">mail</span></a>
         </div>
         </form>
     </div>
